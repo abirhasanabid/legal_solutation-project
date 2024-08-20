@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,15 +21,82 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'btn-color': '#B68C5A',
+                        'dark': '#707070'
                     }
                 }
             }
         }
     </script>
+    <!-- font style -->
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .eb-garamond {
+            font-family: "EB Garamond", serif;
+
+        }
+    </style>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="md:container mx-auto poppins my-10 md:my-14">
+        <!-- navber -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="max-w-11 hidden md:block">
+                            <img class="w-full" src="./images/business.png" alt="">
+                        </div>
+                        <div>
+                            <a
+                                class="btn btn-ghost text-xl md:text-4xl font-extrabold hidden md:block eb-garamond">Justice</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="breadcrumbs text-sm text-dark">
 
+                        <ul class="flex gap-8">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <a class="rounded-lg text-white font-semibold text-sm md:text-lg bg-btn-color py-3 px-5 md:py-4 md:px-7">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+
+        </section>
+    </header>
+    <!-- main -->
+    <main class="container mx-auto">
+
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
