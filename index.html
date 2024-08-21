@@ -22,7 +22,9 @@
                     colors: {
                         clifford: '#da373d',
                         'btn-color': '#B68C5A',
-                        'dark': '#707070'
+                        'dark': '#707070',
+                        'dark-2': '#414040',
+                        'dark-3': '#707070'
                     }
                 }
             }
@@ -43,9 +45,9 @@
 
 <body>
     <!-- header -->
-    <header class="md:container mx-auto poppins my-10 md:my-14">
+    <header class="md:container mx-auto poppins">
         <!-- navber -->
-        <nav>
+        <nav class="my-10 md:my-14">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -63,14 +65,14 @@
                         </div>
                         <div>
                             <a
-                                class="btn btn-ghost text-xl md:text-4xl font-extrabold hidden md:block eb-garamond">Justice</a>
+                                class="btn text-dark-2 btn-ghost text-xl md:text-4xl font-extrabold hidden md:block eb-garamond">Justice</a>
                         </div>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <div class="breadcrumbs text-sm text-dark">
 
-                        <ul class="flex gap-8">
+                        <ul class="flex gap-6 ">
                             <li><a>Home</a></li>
                             <li><a>Services</a></li>
                             <li><a>Cases</a></li>
@@ -80,13 +82,32 @@
                     </div>
                 </div>
                 <div class="navbar-end">
-                    <a class="rounded-lg text-white font-semibold text-sm md:text-lg bg-btn-color py-3 px-5 md:py-4 md:px-7">Free Consultation</a>
+                    <a
+                        class="rounded-lg text-white font-semibold text-sm md:text-lg bg-btn-color py-3 px-5 md:py-4 md:px-7">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
         <!-- banner section -->
         <section>
-
+            <div class="">
+                <div class="hero h-[600px] rounded-lg"
+                    style="background-image: linear-gradient(to top, rgba(17, 17, 17, 1),rgba(17, 17, 17, 0)),url(./images/banner.png);">
+                    <div class=""></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-3xl">
+                            <h1 class="mb-8 text-5xl md:text-7xl font-extrabold eb-garamond">We Provide Effective Legal Solutions</h1>
+                            <p class="mb-8 tracking-wide text-[#E7E7E7]">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                            </p>
+                           <div class="flex items-center justify-center gap-3 md:gap-6">
+                            <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-lg pl-3 py-3 md:py-7"/>
+                            <button class="rounded-lg text-white font-semibold text-sm md:text-lg bg-btn-color py-3 px-5 md:py-4 md:px-7">Search</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </header>
     <!-- main -->
